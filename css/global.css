@@ -1,0 +1,601 @@
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+
+.play{
+    font-family: 'Playfair Display';
+}
+.robo{
+    font-family: 'Roboto';
+}
+
+@media screen and (max-width: 767px) {
+
+    header{
+        margin-top: 20px;
+    }
+    header > div,
+    .shoesmainContainer > div:nth-child(1),
+    .shoesmainContainer > div:nth-child(2),
+    .shoesmainContainer > div:nth-child(4),
+    .shoesmainContainer > div:nth-child(5) > div,
+    .shoesmainContainer > div:nth-child(6) > div,
+    .shoesmainContainer > div:nth-child(7) > div,
+    .shoessuboneContainer > div:nth-child(1) > div,
+    .shoessuboneContainer > div:nth-child(2),
+    .shoessuboneContainer > div:nth-child(3),
+    .shoessuboneContainer > div:nth-child(6),
+    .shoessuboneContainer > div:nth-child(5),
+    .shoessuboneContainer > div:nth-child(7),
+    .shoessuboneContainer > div:nth-child(8) > div,
+    .shoestwoContainer > div:nth-child(1) > div,
+    .shoestwoContainer > div:nth-child(2),
+    .shoestwoContainer > div:nth-child(3) > div,
+    .shoestwoContainer > div:nth-child(5),
+    .shoestwoContainer > div:nth-child(6),
+    .shoestwoContainer > div:nth-child(7),
+    .shoestwoContainer > div:nth-child(8) > div,
+    .shoesthreeContainer > div:nth-child(1) > div,
+    .shoesthreeContainer > div:nth-child(2),
+    .shoesthreeContainer > div:nth-child(3),
+    .shoesthreeContainer > div:nth-child(4),
+    .shoesthreeContainer > div:nth-child(5),
+    .shoesthreeContainer > div:nth-child(6),
+    .shoesthreeContainer > div:nth-child(7),
+    .shoesthreeContainer > div:nth-child(8) > div,
+    footer > div{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    header > div{
+        text-align: center;
+    }
+    header > div > a > h1{
+        font-weight: 800;
+        font-size: 16px;
+        color: #000;
+        font-style: italic;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+    header > div:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    header > div > div{
+        display: inline-block;
+    }
+    header > div > div:nth-of-type(1) > {}
+    
+
+    #searchPanel{
+        position: fixed;
+        background-color: #927777;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 50px 0 20px 1.38%;
+        transition: top 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    #searchPanel.active{
+        top: -50%;
+        transition: top 0.5s ease-in-out;
+    }
+    #searchPanel label{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+    #searchPanel input{}
+    #searchPanel > input{
+        display: none;
+    }
+    #searchPanel ul{}
+    #searchPanel ul li{}
+    #searchPanel ul li input[type='search']{
+        float: left;
+        width: 76.92%;
+        margin-right: 1%;
+        padding: 5px 0;
+        font-size: 14px;
+        padding-left: 2.81%;
+        z-index: 9999;
+    }
+    #searchPanel ul li input[type='submit']{
+        float: left;
+        width: 19.23%;
+        padding: 5px 0;
+        font-size: 16px;
+        background-color: #d3c8c8;
+        border: none;
+    }
+
+    #hamburgerPanel{
+        position: fixed;
+        width: 51.92%;
+        background-color: #2f2e2e;
+        left: 0;
+        top: 0;
+        height: 100%;
+        transition: left 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    #hamburgerPanel.active{
+        left: -60%;
+        transition: left 0.5s ease-in-out;
+    }
+    #hamburgerPanel label{
+        top: 20px;
+        position: absolute;
+        right: 5.08%;
+        color: #fff;
+    }
+    #hamburgerPanel nav{
+        padding: 20px 0 0 5.08%;
+        transition: left 0.5s ease-in-out;
+    }
+    #hamburgerPanel nav ul{
+        text-align: left;
+    }
+    #hamburgerPanel nav ul h2{
+        color: #fff;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 30px;
+        border-left: 4px solid #d3c8c8;
+        padding-left: 3.84%;
+    }
+    #hamburgerPanel nav ul li{}
+    #hamburgerPanel nav ul li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    #hamburgerPanel nav ul li a{
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    footer{
+        background-color: #2f2e2e;
+        padding: 20px 0;
+    }
+    footer > div{}
+    footer > div:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer > div > h2{
+        font-size: 16px;
+        font-weight: 800;
+        font-style: italic;
+        color: #fff;
+    }
+    footer > div > ul{
+        float: right;
+        display: flex;
+    }
+    footer > div > ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer > div > ul > li{
+        margin-top: -20px;
+    }
+    footer > div > ul > li:nth-child(1){
+        padding-right: 10px;
+    }
+    footer > div > ul > li > a{
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-indent: -9999px;
+    }
+    footer > div > ul > li:nth-child(1) > a{
+        background-image: url('../images/sns_01.png');
+    }
+    footer > div > ul > li:nth-child(2) > a{
+        background-image: url('../images/sns_02.png');
+    }
+
+} 
+/* mobile */
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+    header{
+        margin-top: 65px;
+    }
+    header > div,
+    .shoesmainContainer > div:nth-child(1),
+    .shoesmainContainer > div:nth-child(2),
+    .shoesmainContainer > div:nth-child(4),
+    .shoesmainContainer > div:nth-child(5) > div,
+    .shoesmainContainer > div:nth-child(6) > div,
+    .shoesmainContainer > div:nth-child(7) > div,
+    .shoessuboneContainer > div:nth-child(1) > div,
+    .shoessuboneContainer > div:nth-child(2),
+    .shoessuboneContainer > div:nth-child(3),
+    .shoessuboneContainer > div:nth-child(6),
+    .shoessuboneContainer > div:nth-child(5),
+    .shoessuboneContainer > div:nth-child(7),
+    .shoessuboneContainer > div:nth-child(8) > div,
+    .shoestwoContainer > div:nth-child(1) > div,
+    .shoestwoContainer > div:nth-child(2),
+    .shoestwoContainer > div:nth-child(3) > div,
+    .shoestwoContainer > div:nth-child(5),
+    .shoestwoContainer > div:nth-child(6),
+    .shoestwoContainer > div:nth-child(7),
+    .shoestwoContainer > div:nth-child(8) > div,
+    .shoesthreeContainer > div:nth-child(1) > div,
+    .shoesthreeContainer > div:nth-child(2),
+    .shoesthreeContainer > div:nth-child(3),
+    .shoesthreeContainer > div:nth-child(4),
+    .shoesthreeContainer > div:nth-child(5),
+    .shoesthreeContainer > div:nth-child(6),
+    .shoesthreeContainer > div:nth-child(7),
+    .shoesthreeContainer > div:nth-child(8) > div,
+    footer > div{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    header > div{
+        position: relative;
+    }
+    header > div > a > h1{
+        font-weight: 800;
+        font-size: 45px;
+        color: #000;
+        font-style: italic;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    header > div > div{
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+    header > div > div:first-of-type > label{
+        padding-right: 40px;
+    }
+
+    #searchPanel{
+        position: fixed;
+        background-color: #927777;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 50px 0 30px 3.47%;
+        transition: top 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    #searchPanel.active{
+        top: -50%;
+        transition: top 0.5s ease-in-out;
+    }
+    #searchPanel label{
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+    #searchPanel input{}
+    #searchPanel > input{
+        display: none;
+    }
+    #searchPanel ul{}
+    #searchPanel ul li{}
+    #searchPanel ul li input[type='search']{
+        float: left;
+        width: 82%;
+        margin-right: 1%;
+        padding: 10px 0;
+        font-size: 14px;
+        padding-left: 2.81%;
+        z-index: 9999;
+    }
+    #searchPanel ul li input[type='submit']{
+        float: left;
+        width: 10.49%;
+        padding: 10px 0;
+        font-size: 16px;
+        background-color: #d3c8c8;
+        border: none;
+    }
+
+    #hamburgerPanel{
+        position: fixed;
+        width: 40.27%;
+        background-color: #2f2e2e;
+        left: 0;
+        top: 0;
+        height: 100%;
+        transition: left 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    #hamburgerPanel.active{
+        left: -45%;
+        transition: left 0.5s ease-in-out;
+    }
+    #hamburgerPanel label{
+        top: 50px;
+        position: absolute;
+        right: 5.08%;
+        color: #fff;
+    }
+    #hamburgerPanel nav{
+        padding: 100px 0 0 5.08%;
+        transition: left 0.5s ease-in-out;
+    }
+    #hamburgerPanel nav ul{}
+    #hamburgerPanel nav ul h2{
+        color: #fff;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 30px;
+        border-left: 4px solid #d3c8c8;
+        padding-left: 3.47%;
+    }
+    #hamburgerPanel nav ul li{}
+    #hamburgerPanel nav ul li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    #hamburgerPanel nav ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    footer{
+        background-color: #2f2e2e;
+        padding: 65px 0;
+    }
+    footer > div{}
+    footer > div:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer > div > h2{
+        font-size: 45px;
+        font-weight: 800;
+        font-style: italic;
+        color: #fff;
+    }
+    footer > div > ul{
+        float: right;
+    }
+    footer > div > ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer > div > ul > li{
+        float: left;
+        margin-top: -40px;
+    }
+    footer > div > ul > li > a{
+        background-repeat: no-repeat;
+        background-position: right center;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        text-indent: -9999px;
+    }
+    footer > div > ul > li:nth-child(1) > a{
+        background-image: url('../images/sns_01.png');
+    }
+    footer > div > ul > li:nth-child(2) > a{
+        background-image: url('../images/sns_02.png');
+    }
+
+}
+/* tablet */
+
+@media screen and (min-width: 1280px) {
+
+    header{
+        margin-top: 65px;
+    }
+    header > div,
+    .shoesmainContainer > div:nth-child(1),
+    .shoesmainContainer > div:nth-child(2),
+    .shoesmainContainer > div:nth-child(4),
+    .shoesmainContainer > div:nth-child(5) > div,
+    .shoesmainContainer > div:nth-child(6) > div,
+    .shoesmainContainer > div:nth-child(7) > div,
+    .shoessuboneContainer > div:nth-child(1) > div,
+    .shoessuboneContainer > div:nth-child(2),
+    .shoessuboneContainer > div:nth-child(3),
+    .shoessuboneContainer > div:nth-child(5),
+    .shoessuboneContainer > div:nth-child(6),
+    .shoessuboneContainer > div:nth-child(7),
+    .shoessuboneContainer > div:nth-child(8) > div,
+    .shoestwoContainer > div:nth-child(1) > div,
+    .shoestwoContainer > div:nth-child(2),
+    .shoestwoContainer > div:nth-child(3) > div,
+    .shoestwoContainer > div:nth-child(5),
+    .shoestwoContainer > div:nth-child(6),
+    .shoestwoContainer > div:nth-child(7),
+    .shoestwoContainer > div:nth-child(8) > div,
+    .shoesthreeContainer > div:nth-child(1) > div,
+    .shoesthreeContainer > div:nth-child(2),
+    .shoesthreeContainer > div:nth-child(3),
+    .shoesthreeContainer > div:nth-child(4),
+    .shoesthreeContainer > div:nth-child(5),
+    .shoesthreeContainer > div:nth-child(6),
+    .shoesthreeContainer > div:nth-child(7),
+    .shoesthreeContainer > div:nth-child(8) > div,
+    footer > div{
+        max-width: 1420px;
+        margin: 0 auto;
+    }
+    header > div{
+        position: relative;
+    }
+    header > div > a > h1{
+        font-weight: 800;
+        font-size: 45px;
+        color: #000;
+        font-style: italic;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    header > div > div{
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+    header > div > div:first-of-type > label{
+        padding-right: 40px;
+    }
+
+    #searchPanel{
+        position: fixed;
+        background-color: #927777;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 100px 0 100px 17.6%;
+        transition: top 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    #searchPanel.active{
+        top: -50%;
+        transition: top 0.5s ease-in-out;
+    }
+    #searchPanel label{
+        position: absolute;
+        right: 27.6%;
+        top: 60px;
+    }
+    #searchPanel input{}
+    #searchPanel > input{
+        display: none;
+    }
+    #searchPanel ul{}
+    #searchPanel ul li{}
+    #searchPanel ul li input[type='search']{
+        float: left;
+        width: 55.04%;
+        margin-right: 1%;
+        padding: 20px 0;
+        font-size: 40px;
+        padding-left: 2.81%;
+        z-index: 9999;
+    }
+    #searchPanel ul li input[type='submit']{
+        float: left;
+        width: 10.49%;
+        padding: 20px 0;
+        font-size: 40px;
+        background-color: #d3c8c8;
+        border: none;
+    }
+
+    #hamburgerPanel{
+        position: fixed;
+        width: 30.62%;
+        background-color: #2f2e2e;
+        left: 0;
+        top: 0;
+        height: 100%;
+        transition: left 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    #hamburgerPanel.active{
+        left: -40%;
+        transition: left 0.5s ease-in-out;
+    }
+    #hamburgerPanel label{
+        top: 50px;
+        position: absolute;
+        right: 5.08%;
+        color: #fff;
+    }
+    #hamburgerPanel nav{
+        padding: 100px 0 0 5.08%;
+        transition: left 0.5s ease-in-out;
+    }
+    #hamburgerPanel nav ul{}
+    #hamburgerPanel nav ul h2{
+        color: #fff;
+        font-style: italic;
+        font-size: 80px;
+        font-weight: 900;
+        margin-bottom: 165px;
+        border-left: 8px solid #d3c8c8;
+        padding-left: 5.08%;
+    }
+    #hamburgerPanel nav ul li{}
+    #hamburgerPanel nav ul li:not(:last-child){
+        margin-bottom: 45px;
+    }
+    #hamburgerPanel nav ul li a{
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    footer{
+        background-color: #2f2e2e;
+        padding: 65px 0;
+    }
+    footer > div{}
+    footer > div:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer > div > h2{
+        font-size: 45px;
+        font-weight: 800;
+        font-style: italic;
+        color: #fff;
+    }
+    footer > div > ul{
+        float: right;
+    }
+    footer > div > ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer > div > ul > li{
+        float: left;
+        margin-top: -40px;
+    }
+    footer > div > ul > li > a{
+        background-repeat: no-repeat;
+        background-position: right center;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        text-indent: -9999px;
+    }
+    footer > div > ul > li:nth-child(1) > a{
+        background-image: url('../images/sns_01.png');
+    }
+    footer > div > ul > li:nth-child(2) > a{
+        background-image: url('../images/sns_02.png');
+    }
+
+} 
+/* desktop */
